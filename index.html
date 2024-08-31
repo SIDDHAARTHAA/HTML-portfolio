@@ -10,22 +10,15 @@
             background-color: #f4f4f4;
             margin: 0;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         h1 {
             color: #333;
         }
         h3 {
             color: #666;
-        }
-        a {
-            text-decoration: none;
-            color: #007BFF;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        hr {
-            margin: 20px 0;
         }
         .section {
             margin-bottom: 40px;
@@ -42,6 +35,51 @@
         }
         li {
             margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .icons a {
+            margin-right: 15px;
+        }
+        .icons img {
+            width: 24px;
+            height: 24px;
+        }
+        .footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .links {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+        .links a {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 8px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+        }
+        .links a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -70,14 +108,30 @@
 
     <div class="section contact">
         <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to drop me an email or connect with me on LinkedIn.</p>
-        <p><strong>Email:</strong> siddhaartha@example.com</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/siddhaartha" target="_blank">Siddhaartha B S</a></p>
+        <p>If you'd like to get in touch, feel free to drop me an email or connect with me on social media.</p>
+        <p><strong>Email:</strong> <a href="mailto:siddhaartha09@gmail.com">siddhaartha09@gmail.com</a></p>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/siddhaartha-b-s-16802b2b7" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/siddhaartha_bs" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+            </a>
+            <a href="https://open.spotify.com/playlist/37i9dQZF1EpiMN2g37xL9l?si=h793Fv4qSoiJGArV3SLc0w&pi=a-8x_smjekQ6u7" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174872.png" alt="Spotify">
+            </a>
+        </div>
     </div>
 
-    <hr>
-    <a href="./movieRanking.html">My Favorite Movies & Shows</a>
-    <br>
-    <a href="./aboutMe.html">About Me</a>
+    <div class="links">
+        <a href="./movieRanking.html">My Favorite Movies & Shows</a>
+        <a href="./aboutMe.html">About Me</a>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Siddhaartha B S. All rights reserved.</p>
+        <a href="mailto:siddhaartha09@gmail.com">Contact</a> |
+        <a href="https://www.linkedin.com/in/siddhaartha-b-s-16802b2b7" target="_blank">LinkedIn</a>
+    </div>
 </body>
 </html>
